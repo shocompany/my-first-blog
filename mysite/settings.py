@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'o59@oxe^!xlc0hc3(#ee7#@(*2g(8(r22df86(d@5muq^ahgyj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False#Trueだった
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
@@ -121,3 +121,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+LOGIN_REDIRECT_URL = '/'#2020/04/06に追加した
