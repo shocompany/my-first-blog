@@ -18,7 +18,7 @@ class Post(models.Model):
         return self.title
 
     def approved_comments(self):
-    return self.comments.filter(approved_comment=True)
+        return self.comments.filter(approved_comment=True)
 
 class Comment(models.Model):
     post = models.ForeignKey('blog.Post', on_delete=models.CASCADE, related_name='comments')
