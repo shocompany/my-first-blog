@@ -5,7 +5,7 @@ from django.shortcuts import redirect
 from django.shortcuts import render, get_object_or_404#与えられたpkのPostがない場合、前よりもっとよい Page Not Found 404 ページが表示されます。
 from django.shortcuts import render
 from django.utils import timezone
-from .models import Post, #Comment #同じフォルダにあるので.+modelsだけで表示が済む(.pyは必要ない)
+from .models import Post#, Comment #同じフォルダにあるので.+modelsだけで表示が済む(.pyは必要ない)
 from .forms import PostForm, CommentForm
 
 @login_required
